@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoronaStatsActivity">
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/no_cases_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="Comfirmed"
+
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_name"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/no_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eczar_semibold"
+        android:text="TextView"
+        android:textColor="@color/red_colour"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_cases_title" />
+
+    <TextView
+        android:id="@+id/no_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eczar_semibold"
+        android:text="TextView"
+        android:textColor="@color/green_colour"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_recovered_title" />
+
+    <TextView
+        android:id="@+id/no_recovered_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="Recovered"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_cases_title" />
+
+    <TextView
+        android:id="@+id/no_death_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="Deceased"
+        android:textColor="@color/grey_colour"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/no_recovered" />
+
+    <TextView
+        android:id="@+id/no_death"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eczar_semibold"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_death_title" />
+
+    <TextView
+        android:id="@+id/new_cases_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eczar_semibold"
+        android:textColor="@color/red_colour"
+        app:layout_constraintEnd_toEndOf="@+id/no_cases"
+        app:layout_constraintStart_toStartOf="@+id/no_cases"
+        app:layout_constraintTop_toBottomOf="@+id/no_cases" />
+
+    <TextView
+        android:id="@+id/new_recovered_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/no_recovered"
+        app:layout_constraintStart_toStartOf="@+id/no_recovered"
+        app:layout_constraintTop_toBottomOf="@+id/no_recovered" />
+
+    <TextView
+        android:id="@+id/new_death_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eczar_semibold"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_background"
+        app:layout_constraintEnd_toEndOf="@+id/no_death"
+        app:layout_constraintStart_toStartOf="@+id/no_death"
+        app:layout_constraintTop_toBottomOf="@+id/no_death" />
+</androidx.constraintlayout.widget.ConstraintLayout>
